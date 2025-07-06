@@ -1,0 +1,163 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    height: 100vh;
+    background: url('../images/gril back.jpeg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Featured Section */
+
+.featured-section {
+    background-color: #f8f9fa;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Navigation */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff !important;
+}
+
+
+/* Forms */
+
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+
+/* Buttons */
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    padding: 0.5rem 2rem;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+
+
+/* Contact Page */
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-info i {
+    color: #ff6b6b;
+    margin-right: 10px;
+}
+
+
+/* About Page */
+
+.about-section {
+    padding: 4rem 0;
+}
+
+.about-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Reservation Page */
+
+.reservation-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .card-img-top {
+        height: 150px;
+    }
+}
